@@ -54,17 +54,17 @@ if (!isset($_SESSION['user_id']) && isset($_COOKIE['remember_token']) && isset($
             setcookie('remember_token', $token, [
                 'expires' => time() + (30 * 24 * 60 * 60),
                 'path' => '/',
-                'secure' => false,
+                'secure' => true,
                 'httponly' => true,
-                'samesite' => 'Lax'
+                'samesite' => 'Strict'
             ]);
             
             setcookie('user_id', $user['id'], [
                 'expires' => time() + (30 * 24 * 60 * 60),
                 'path' => '/',
-                'secure' => false,
+                'secure' => true,
                 'httponly' => true,
-                'samesite' => 'Lax'
+                'samesite' => 'Strict'
             ]);
         }
     }
