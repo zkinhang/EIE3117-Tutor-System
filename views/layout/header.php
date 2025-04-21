@@ -8,10 +8,6 @@ $basePath = '/tutor_system/public';
     <link rel="stylesheet" href="<?php echo $basePath; ?>/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-<<<<<<< HEAD
-=======
-        /* Remove profile-image related CSS */
->>>>>>> c007d01efb0847f7209cca9efb49fe6117a7b674
         .profile-image img {
             width: 100px;
             height: 100px;

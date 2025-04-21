@@ -12,6 +12,7 @@
             <div class="card-body">
                 <form method="POST" action="<?php echo $basePath; ?>/auth/handlers.php" enctype="multipart/form-data">
                     <input type="hidden" name="action" value="register">
+                    <input type="hidden" name="csrf_token" value="<?php echo generate_csrf_token(); ?>">
                     
                     <!-- Profile Image Upload -->
                     <div class="mb-3">

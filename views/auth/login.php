@@ -16,6 +16,7 @@
                     <form method="POST" action="<?php echo $basePath; ?>/auth/handlers.php">
                         <input type="hidden" name="action" value="login">
                         <input type="hidden" name="csrf_token" value="<?php echo generate_csrf_token(); ?>">
+                        
                         <div class="mb-3">
                             <label class="form-label">Login ID</label>
                             <input type="text" name="login_id" class="form-control" required>
