@@ -45,8 +45,26 @@ function set_security_headers() {
     // Anti-Clickjacking
     header("X-Frame-Options: DENY");
     
-    // Other security headers
+    // Prevent MIME type sniffing
     header("X-Content-Type-Options: nosniff");
+    
+    // Enable XSS filtering
     header("X-XSS-Protection: 1; mode=block");
+    
+    // Control referrer information
     header("Referrer-Policy: strict-origin-when-cross-origin");
+    
+    // Prevent browsers from trying to guess the content type
+    header("X-Download-Options: noopen");
+    
+    // Control browser features
+    header("Permissions-Policy: geolocation=(), microphone=(), camera=()");
+    
+    // Enable HSTS (HTTP Strict Transport Security)
+    header("Strict-Transport-Security: max-age=31536000; includeSubDomains");
+    
+    // Prevent caching of sensitive pages
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Pragma: no-cache");
+    header("Expires: 0");
 } 
