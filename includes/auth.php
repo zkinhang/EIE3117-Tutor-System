@@ -143,17 +143,17 @@ class Auth {
                     setcookie('remember_token', $token, [
                         'expires' => time() + (30 * 24 * 60 * 60),
                         'path' => '/',
-                        'secure' => true,
+                        'secure' => false,
                         'httponly' => true,
-                        'samesite' => 'Strict'
+                        'samesite' => 'Lax'
                     ]);
                     
                     setcookie('user_id', $user['id'], [
                         'expires' => time() + (30 * 24 * 60 * 60),
                         'path' => '/',
-                        'secure' => true
+                        'secure' => false,
                         'httponly' => true,
-                        'samesite' => 'Strict'
+                        'samesite' => 'Lax'
                     ]);
                 }
 
