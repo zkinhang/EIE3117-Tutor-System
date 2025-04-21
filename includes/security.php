@@ -33,7 +33,7 @@ function set_security_headers() {
     // Content Security Policy (CSP)
     $csp = "default-src 'self'; " .
            "script-src 'self' https://cdn.jsdelivr.net; " .
-           "style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; " .
+           "style-src 'self' https://cdn.jsdelivr.net; " .
            "img-src 'self' data: https:; " .
            "font-src 'self' https://cdn.jsdelivr.net; " .
            "connect-src 'self'; " .
