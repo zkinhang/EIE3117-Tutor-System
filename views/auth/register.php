@@ -18,16 +18,9 @@
                     <div class="mb-3">
                         <label>Profile Image</label>
                         <div class="d-flex align-items-center">
-<<<<<<< HEAD
                             <div class="profile-image">
                                 <img id="preview" src="<?php echo $basePath; ?>/images/default-avatar.png" 
                                      alt="Profile Preview">
-=======
-                            <div class="me-3">
-                                <img id="preview" src="<?php echo $basePath; ?>/images/default-avatar.png" 
-                                     class="rounded-circle" alt="Profile Preview" 
-                                     style="width: 100px; height: 100px; object-fit: cover;">
->>>>>>> origin/main
                             </div>
                             <div class="flex-grow-1">
                                 <input type="file" name="profile_image" id="profile_image" class="form-control" 

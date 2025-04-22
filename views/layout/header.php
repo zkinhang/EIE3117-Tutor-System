@@ -4,7 +4,6 @@ $basePath = '/tutor_system/public';
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Update Content Security Policy -->
@@ -17,10 +16,6 @@ $basePath = '/tutor_system/public';
     
     <!-- Make sure CSS is loaded correctly -->
     <link rel="stylesheet" type="text/css" href="<?php echo $basePath; ?>/css/style.css">
-=======
-    <title>Tutor Matching System</title>
-    <link rel="stylesheet" href="<?php echo $basePath; ?>/css/style.css">
->>>>>>> origin/main
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>

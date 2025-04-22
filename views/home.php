@@ -20,23 +20,11 @@
                             <!-- Profile Image -->
                             <div class="profile-image mb-3">
                                 <?php if (isset($_SESSION['profile_image']) && $_SESSION['profile_image']): ?>
-<<<<<<< HEAD
                                     <img src="/uploads/profile_images/<?php echo basename($_SESSION['profile_image']); ?>" 
                                          alt="Profile">
                                 <?php else: ?>
                                     <img src="<?php echo $basePath; ?>/images/default-avatar.png" 
                                          alt="Default Profile">
-=======
-                                    <img src="<?php echo str_replace('/public', '', $basePath) . $_SESSION['profile_image']; ?>" 
-                                         alt="Profile" 
-                                         class="rounded-circle"
-                                         style="width: 100px; height: 100px; object-fit: cover;">
-                                <?php else: ?>
-                                    <img src="<?php echo $basePath; ?>/images/default-avatar.png" 
-                                         alt="Default Profile" 
-                                         class="rounded-circle"
-                                         style="width: 100px; height: 100px; object-fit: cover;">
->>>>>>> origin/main
                                 <?php endif; ?>
                             </div>
                             <!-- User Name -->

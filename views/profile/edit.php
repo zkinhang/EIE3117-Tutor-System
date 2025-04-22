@@ -17,7 +17,6 @@
                         <input type="hidden" name="csrf_token" value="<?php echo generate_csrf_token(); ?>">
                         <!-- Profile Image Section -->
                         <div class="text-center mb-3">
-<<<<<<< HEAD
                             <div class="profile-image">
                                 <?php if (isset($user['profile_image']) && $user['profile_image']): ?>
                                     <img src="/uploads/profile_images/<?php echo basename($user['profile_image']); ?>" 
@@ -27,19 +26,6 @@
                                          alt="Default Profile">
                                 <?php endif; ?>
                             </div>
-=======
-                            <?php if (isset($user['profile_image']) && $user['profile_image']): ?>
-                                <img src="<?php echo str_replace('/public', '', $basePath) . $user['profile_image']; ?>" 
-                                     alt="Current Profile" 
-                                     class="rounded-circle"
-                                     style="width: 150px; height: 150px; object-fit: cover;">
-                            <?php else: ?>
-                                <img src="<?php echo $basePath; ?>/images/default-avatar.png" 
-                                     alt="Default Profile" 
-                                     class="rounded-circle"
-                                     style="width: 150px; height: 150px; object-fit: cover;">
-                            <?php endif; ?>
->>>>>>> origin/main
                             <div class="mt-2">
                                 <input type="file" name="profile_image" id="profile_image" class="form-control" accept="image/*">
                                 <small class="text-muted">Maximum file size: 2MB. Supported formats: JPG, PNG, GIF</small>

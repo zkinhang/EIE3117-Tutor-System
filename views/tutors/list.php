@@ -60,15 +60,6 @@ $expertise_areas = $tutor->getExpertiseAreas();
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <!-- Updated Profile Image Section -->
-<<<<<<< HEAD
-                            <div class="profile-image mb-3">
-                                <?php if (isset($tutor['profile_image']) && $tutor['profile_image']): ?>
-                                    <img src="/uploads/profile_images/<?php echo basename($tutor['profile_image']); ?>" 
-                                         alt="Profile Image">
-                                <?php else: ?>
-                                    <img src="<?php echo $basePath; ?>/images/default-avatar.png" 
-                                         alt="Default Profile">
-=======
                             <div class="mb-3">
                                 <?php if (isset($tutor['profile_image']) && $tutor['profile_image']): ?>
                                     <img src="<?php echo str_replace('/public', '', $basePath) . $tutor['profile_image']; ?>" 
@@ -80,7 +71,6 @@ $expertise_areas = $tutor->getExpertiseAreas();
                                          alt="Default Profile" 
                                          class="rounded-circle"
                                          style="width: 120px; height: 120px; object-fit: cover; margin: 0 auto; display: block;">
->>>>>>> origin/main
                                 <?php endif; ?>
                             </div>
                             
