@@ -4,25 +4,19 @@ $basePath = '/tutor_system/public';
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Update Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
-        script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net;
-        img-src 'self' data: https:;
-    ">
-    
-    <!-- Make sure CSS is loaded correctly -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $basePath; ?>/css/style.css">
-=======
     <title>Tutor Matching System</title>
     <link rel="stylesheet" href="<?php echo $basePath; ?>/css/style.css">
->>>>>>> origin/main
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <style>
+        /* Remove profile-image related CSS */
+        .profile-image img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

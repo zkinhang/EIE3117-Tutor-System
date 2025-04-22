@@ -4,17 +4,6 @@
             <div class="card">
                 <div class="card-body text-center">
                     <!-- Profile Image -->
-<<<<<<< HEAD
-                    <div class="profile-image mb-3">
-                        <?php if (isset($tutor['profile_image']) && $tutor['profile_image']): ?>
-                            <img src="/uploads/profile_images/<?php echo basename($tutor['profile_image']); ?>" 
-                                 alt="Tutor Profile">
-                        <?php else: ?>
-                            <img src="<?php echo $basePath; ?>/images/default-avatar.png" 
-                                 alt="Default Profile">
-                        <?php endif; ?>
-                    </div>
-=======
                     <?php if (isset($tutor['profile_image']) && $tutor['profile_image']): ?>
                         <img src="<?php echo str_replace('/public', '', $basePath) . $tutor['profile_image']; ?>" 
                              alt="Tutor Profile" 
@@ -26,7 +15,6 @@
                              class="rounded-circle mb-3"
                              style="width: 150px; height: 150px; object-fit: cover;">
                     <?php endif; ?>
->>>>>>> origin/main
                     <h5 class="card-title"><?php echo htmlspecialchars($tutor['nickname']); ?></h5>
                     <!-- Rest of the tutor card content -->
                 </div>

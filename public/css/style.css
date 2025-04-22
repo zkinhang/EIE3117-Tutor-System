@@ -24,6 +24,7 @@ body {
     margin-bottom: 20px;
 } 
 
+<<<<<<< HEAD
 /* Simplified profile image styles - all images will be 100x100px */
 .profile-image {
     display: flex;
@@ -31,10 +32,13 @@ body {
     align-items: center;
 }
 
+=======
+>>>>>>> origin/main
 .profile-image img {
     width: 100px;
     height: 100px;
     object-fit: cover;
+<<<<<<< HEAD
     border: 2px solid #ddd;
     border-radius: 50%;
     transition: border-color 0.3s ease;
@@ -85,4 +89,8 @@ body {
         width: 150px;
         height: 150px;
     }
+=======
+    border-radius: 50%;
+    border: 2px solid #ddd;
+>>>>>>> origin/main
 } 

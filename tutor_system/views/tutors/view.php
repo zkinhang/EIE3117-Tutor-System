@@ -43,17 +43,6 @@ if (isset($_SESSION['user_id']) && $_SESSION['user_type'] === 'student') {
                     <!-- Tutor Profile Header -->
                     <div class="text-center mb-4">
                         <!-- Profile Image -->
-<<<<<<< HEAD
-                        <div class="profile-image mb-3">
-                            <?php if (isset($tutor_data['profile_image']) && $tutor_data['profile_image']): ?>
-                                <img src="/uploads/profile_images/<?php echo basename($tutor_data['profile_image']); ?>" 
-                                     alt="Tutor Profile">
-                            <?php else: ?>
-                                <img src="<?php echo $basePath; ?>/images/default-avatar.png" 
-                                     alt="Default Profile">
-                            <?php endif; ?>
-                        </div>
-=======
                         <?php if (isset($tutor_data['profile_image']) && $tutor_data['profile_image']): ?>
                             <img src="<?php echo str_replace('/public', '', $basePath) . $tutor_data['profile_image']; ?>" 
                                  alt="Tutor Profile" 
@@ -65,7 +54,6 @@ if (isset($_SESSION['user_id']) && $_SESSION['user_type'] === 'student') {
                                  class="rounded-circle mb-3"
                                  style="width: 200px; height: 200px; object-fit: cover;">
                         <?php endif; ?>
->>>>>>> origin/main
                         <h2><?php echo htmlspecialchars($tutor_data['nickname']); ?></h2>
                     </div>
                     <!-- Rest of the tutor profile content -->
