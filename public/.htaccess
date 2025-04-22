@@ -1,0 +1,30 @@
+RewriteEngine On
+Options -Indexes
+RewriteBase /
+
+# Allow direct access to uploads directory
+RewriteRule ^uploads/(.*)$ ../uploads/$1 [L]
+
+# If the requested file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Remove trailing slashes
+RewriteRule ^(.*)/$ $1 [L,R=301]
+
+# Add proper MIME type handling
+AddType text/css .css
+AddType text/javascript .js
+
+# Handle CSS files properly
+<FilesMatch "\.css$">
+    Header set Content-Type "text/css"
+</FilesMatch>
+
+# Handle JavaScript files properly
+<FilesMatch "\.js$">
+    Header set Content-Type "text/javascript"
+</FilesMatch>
+
+# Send all requests to index.php
+RewriteRule ^(.*)$ index.php [L,QSA]
