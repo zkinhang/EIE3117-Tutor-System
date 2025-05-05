@@ -52,17 +52,6 @@ if (isset($_SESSION['user_id']) && $_SESSION['user_type'] === 'student') {
                                      alt="Default Profile">
                             <?php endif; ?>
                         </div>
-                        <?php if (isset($tutor_data['profile_image']) && $tutor_data['profile_image']): ?>
-                            <img src="<?php echo str_replace('/public', '', $basePath) . $tutor_data['profile_image']; ?>" 
-                                 alt="Tutor Profile" 
-                                 class="rounded-circle mb-3"
-                                 style="width: 200px; height: 200px; object-fit: cover;">
-                        <?php else: ?>
-                            <img src="<?php echo $basePath; ?>/images/default-avatar.png" 
-                                 alt="Default Profile" 
-                                 class="rounded-circle mb-3"
-                                 style="width: 200px; height: 200px; object-fit: cover;">
-                        <?php endif; ?>
                         <h2><?php echo htmlspecialchars($tutor_data['nickname']); ?></h2>
                     </div>
                     <!-- Rest of the tutor profile content -->
